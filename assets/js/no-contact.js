@@ -166,8 +166,8 @@ function InfoWrite() {
     document.querySelector(
         '[data-item="year"]'
     ).innerHTML = `${personal.age} anos`;
-    document.querySelector('[data-item="email"]').innerHTML = personal.email;
-    document.querySelector('[data-item="phone"]').innerHTML = personal.phone;
+    document.querySelector('[data-item="email"]').innerHTML = "xxx";
+    document.querySelector('[data-item="phone"]').innerHTML = "xxx";
     document.querySelector('[data-item="target"]').innerHTML =
         personal.interest;
     document.querySelector(
@@ -399,10 +399,10 @@ function footerWrite() {
     ).innerHTML = `${personal.address.city.long}, ${personal.address.state.short}<br/>${personal.address.country.long}`;
     document.querySelector(
         '.footer-contact span[data-contact="phone"]'
-    ).innerHTML = personal.phone;
+    ).innerHTML = "xxx";
     document.querySelector(
         '.footer-contact span[data-contact="email"]'
-    ).innerHTML = personal.email;
+    ).innerHTML = "xxx";
     let network = "";
     for (let i = 0; i < 3; i++) {
         network += `<a target="_blank" href="${social[i].link}"><img src="./src/img/social/${social[i].name}.svg" alt="${social[i].name}" title="${social[i].name}"></a>`;
